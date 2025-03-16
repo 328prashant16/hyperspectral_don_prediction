@@ -1,0 +1,22 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declare text files to be normalized and converted to LF on checkout
+*.txt text
+*.md text
+*.html text
+*.css text
+*.js text
+
+# Binary files (ensure they are not altered by Git)
+*.jpg binary
+*.png binary
+*.gif binary
+*.pdf binary
+*.exe binary
+
+# Ensure that line endings are consistent for all users, even on Windows
+* text=auto eol=lf
+
+# add .gitignore file
+venv/

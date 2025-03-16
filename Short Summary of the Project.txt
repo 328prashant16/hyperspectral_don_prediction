@@ -1,0 +1,18 @@
+Short Summary of the Project
+This project focuses on predicting DON mycotoxin concentration in corn samples using hyperspectral imaging data. The pipeline includes the following key components:
+
+Data Exploration: A Jupyter notebook (data_exploration.ipynb) is used for exploratory data analysis (EDA), including visualizations of DON concentration distribution, correlation heatmaps, and outlier detection.
+
+Preprocessing: The data is preprocessed by handling missing values, normalizing features, and reshaping the data for model training.
+
+Model Training: A Convolutional Neural Network (CNN) is trained on the hyperspectral data, alongside other models like XGBoost, LightGBM, TPOT, and AutoKeras. The CNN achieves the best performance with metrics such as MAE, RMSE, and R².
+
+Model Deployment: The trained CNN model is deployed as a FastAPI application, allowing users to upload a CSV file containing hyperspectral data and receive predictions for DON concentration. The API also calculates evaluation metrics (MSE, MAE, R²) for the predictions.
+
+Containerization: The application is containerized using Docker, making it easy to deploy and run in any environment.
+
+Logging and Monitoring: Logs are generated for debugging and monitoring the pipeline, ensuring transparency and traceability.
+
+Unit Tests: Unit tests are included to validate the functionality of the pipeline components.
+
+GitHub Repository: The complete code and documentation for this project are available on GitHub: https://github.com/328prashant16/hyperspectral_don_prediction.
